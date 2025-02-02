@@ -5,7 +5,7 @@ def find_number(string):
     for i in range(0, 3):
         if not string[i].isdecimal():
             return False
-    if string[3] is not '-':
+    if string[3]!='-':
         return False
     for i in range(4, 7):
         if not string[i].isdecimal():
@@ -13,17 +13,33 @@ def find_number(string):
     if string[7]!='-':
         return False
     for i in range(8, 12):
-        if not string[i].isdecimal:
+        if not string[i].isdecimal():
             return False
     return True
 
+def from_a_text(message):
+    #characters = len(message)
+
+    text = ''
+    for i in message:
+        if i.isalnum() or i == '-':
+            text+=i
+            if find_number(text):
+                return True
+        else:
+            text=''
+    return False
+
+
 def main():
     print('Enter a number so that we can evaluate it and check whether it is a cnadian number or not')
-    number = '333-112-2356'
+    number = 'I am 333-112-2356'
     if find_number(number):
         print('Yes it is.')
     else:
         print('It is not')
+
+    print(from_a_text(number))
 
 if __name__ == '__main__':
     main()
