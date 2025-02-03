@@ -33,7 +33,7 @@ def from_a_text(message):
 
 def main():
     print('Enter a number so that we can evaluate it and check whether it is a cnadian number or not')
-    number = 'I am 333-112-2356'
+    number = 'I am 333-112-2436 that it'
     if find_number(number):
         print('Yes it is.')
     else:

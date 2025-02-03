@@ -1,0 +1,6 @@
+import re #regular expression module
+
+
+pattern_object = re.compile(r'\d\d\d-\d\d\d-\d\d\d\d') #create a regular expression custom pattern
+mo = pattern_object.search('My phone number is 444-232-4325') 
+print(mo.group())
