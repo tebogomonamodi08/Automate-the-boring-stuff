@@ -1,0 +1,26 @@
+------------System Requirements--------------------
+1. Read user input
+2. Read a file with string
+3. find and replace the words with ADJECTIVE, NOUN, VERB, ADVERB
+----------------------------------------------------
+--------MODULES----------------------------------
+re module - used to find the words and replace.
+-------------------------------------------------
+
+-------PSEUDO---------------------------------------
+1. START
+2. TRY opening file
+    DISPLAY 'file not found' if not found
+3. READ contents
+4. DISPLAY contents
+5. READ input
+6. REPLACE ADJECTIVE with input
+7.READ input
+8. REPLACE NOUN with input
+9. READ input
+10. REPLACE ADVERB with input
+11. DISPLAY updated contents
+12.OPEN file
+13.OVERRITE the file with contents
+
+---------------------------------------------------------------------

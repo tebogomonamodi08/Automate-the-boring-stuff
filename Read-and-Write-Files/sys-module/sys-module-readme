@@ -34,5 +34,7 @@ else:
 ---------------------------------------------------------------
 
 
-
+<---------EXTENDED FUNCTIONALITY--------------------------->
+1. Added the delete functionality, the user can now delete a secific entry
+or clear the whole clipboard
 
