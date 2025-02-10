@@ -1,0 +1,38 @@
+-------------MULTICLIPBOARD PROJECT-----------------
+Modules used:
+pyperclip, sys, shelve
+
+System Reuirements:
+1. Read the commandline argument
+2. copy from clipboard
+3. list keys from a shelve
+
+-------------------PSEUDO-----------------------------------
+arguments = length of argv
+try - command = argv[1],parameter = argv[2]
+except(IndexError)- exit system(1)
+if arguments==3:
+    if command(lower case) is save:
+        open shelve file
+        try - set the shelve[parameter] to clipboard
+        except(ClipboardError) - prompt clipboard is empty, system exit(1)
+    else:
+        prompt invalid command, system exit(1) 
+        
+
+elif arguments==2:
+    if command(lower case) is list:
+        open the shelve, copy keys to the clipboard
+    else:
+        prompt 'invalid command'
+        system exit(1)
+
+else:
+    prompt 'The system is doing nothing'
+    exit system(0)
+
+---------------------------------------------------------------
+
+
+
+

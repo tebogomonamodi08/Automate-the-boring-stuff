@@ -1,0 +1,11 @@
+sys module
+ !When to use the module
+  #Handling commandline arguments
+    1.Argument are passed in the sys.argv list
+    <------------------------------------------------------>
+    I used the sys.argv[1] print to display the argument passed with the script
+    on the terminal.
+    <------------------------------------------------------>
+  #Managing script execution flow
+  #Debugging by printing system details
+  #Redirecting input/output streams
