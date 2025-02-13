@@ -1,0 +1,10 @@
+import shutil, os
+"""The First task was to go into a directory containing a python file and copy it to the desktop
+and rename it."""
+os.chdir(os.path.join(os.path.expanduser('~'), 'Desktop', 'AUTOMATE-THE-BORING-STUFF/Regular-Expressions/extractor'))
+print(os.listdir())
+
+if 'hi.py' in os.listdir(os.path.join(os.path.expanduser('~'),'Desktop')):
+    print('Already There.')
+else:
+    shutil.copy(os.path.join(os.getcwd(), 'password-validator.py'), os.path.join(os.path.expanduser('~'), 'Desktop/hi.py'))
